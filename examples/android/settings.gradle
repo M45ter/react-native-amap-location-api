@@ -1,5 +1,5 @@
 rootProject.name = 'examples'
-include ':react-native-amap-location'
-project(':react-native-amap-location').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-amap-location/android')
+include ':react-native-amap-location-api'
+project(':react-native-amap-location-api').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-amap-location-api/android')
 
 include ':app'

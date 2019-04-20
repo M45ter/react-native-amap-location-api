@@ -39,7 +39,7 @@
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
-		B6DCA5BCDD33474E8D42E7E2 /* libRNAmapLocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A26C77F46BF487C9FAA17FD /* libRNAmapLocation.a */; };
+		FC1EDD6CEC354BB998442353 /* libRNAmapLocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6085265D9D2242968E19B39D /* libRNAmapLocation.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -347,8 +347,8 @@
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		FA4EBA397D314BC89AB53ACA /* RNAmapLocation.xcodeproj */ = {isa = PBXFileReference; name = "RNAmapLocation.xcodeproj"; path = "../node_modules/react-native-amap-location/ios/RNAmapLocation.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		1A26C77F46BF487C9FAA17FD /* libRNAmapLocation.a */ = {isa = PBXFileReference; name = "libRNAmapLocation.a"; path = "libRNAmapLocation.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		45B0CEB5CA1E40F09094941D /* RNAmapLocation.xcodeproj */ = {isa = PBXFileReference; name = "RNAmapLocation.xcodeproj"; path = "../node_modules/react-native-amap-location-api/ios/RNAmapLocation.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		6085265D9D2242968E19B39D /* libRNAmapLocation.a */ = {isa = PBXFileReference; name = "libRNAmapLocation.a"; path = "libRNAmapLocation.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -377,7 +377,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				B6DCA5BCDD33474E8D42E7E2 /* libRNAmapLocation.a in Frameworks */,
+				FC1EDD6CEC354BB998442353 /* libRNAmapLocation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,7 +567,7 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
-				FA4EBA397D314BC89AB53ACA /* RNAmapLocation.xcodeproj */,
+				45B0CEB5CA1E40F09094941D /* RNAmapLocation.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1199,7 +1199,7 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)\..\node_modules\react-native-amap-location\ios",
+					"$(SRCROOT)\..\node_modules\react-native-amap-location-api\ios",
 				);
 			};
 			name = Debug;
@@ -1225,7 +1225,7 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)\..\node_modules\react-native-amap-location\ios",
+					"$(SRCROOT)\..\node_modules\react-native-amap-location-api\ios",
 				);
 			};
 			name = Release;
@@ -1248,7 +1248,7 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)\..\node_modules\react-native-amap-location\ios",
+					"$(SRCROOT)\..\node_modules\react-native-amap-location-api\ios",
 				);
 			};
 			name = Debug;
@@ -1270,7 +1270,7 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)\..\node_modules\react-native-amap-location\ios",
+					"$(SRCROOT)\..\node_modules\react-native-amap-location-api\ios",
 				);
 			};
 			name = Release;
@@ -1304,7 +1304,7 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)\..\node_modules\react-native-amap-location\ios",
+					"$(SRCROOT)\..\node_modules\react-native-amap-location-api\ios",
 				);
 			};
 			name = Debug;
@@ -1338,7 +1338,7 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)\..\node_modules\react-native-amap-location\ios",
+					"$(SRCROOT)\..\node_modules\react-native-amap-location-api\ios",
 				);
 			};
 			name = Release;
@@ -1371,7 +1371,7 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)\..\node_modules\react-native-amap-location\ios",
+					"$(SRCROOT)\..\node_modules\react-native-amap-location-api\ios",
 				);
 			};
 			name = Debug;
@@ -1404,7 +1404,7 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)\..\node_modules\react-native-amap-location\ios",
+					"$(SRCROOT)\..\node_modules\react-native-amap-location-api\ios",
 				);
 			};
 			name = Release;

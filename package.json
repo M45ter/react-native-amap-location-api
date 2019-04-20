@@ -1,5 +1,5 @@
 {
-  "name": "@M45ter/react-native-amap-location",
+  "name": "react-native-amap-location-api",
   "version": "1.0.0",
   "description": "AMap location SDK for react native",
   "main": "index.js",
