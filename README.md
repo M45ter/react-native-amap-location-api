@@ -1,45 +1,36 @@
+# 开发中，未发布...
 
-# react-native-amap-location
+# react-native-amap-location-api
 
 ## Getting started
 
-`$ npm install react-native-amap-location --save`
+`$ npm install react-native-amap-location-api --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-amap-location`
-
-### Manual installation
-
-
-#### iOS
-
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-amap-location` and add `RNAmapLocation.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNAmapLocation.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
-
-#### Android
-
-1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import com.amap.location.RNAmapLocationPackage;` to the imports at the top of the file
-  - Add `new RNAmapLocationPackage()` to the list returned by the `getPackages()` method
-2. Append the following lines to `android/settings.gradle`:
-  	```
-  	include ':react-native-amap-location'
-  	project(':react-native-amap-location').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-amap-location/android')
-  	```
-3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
-  	```
-      compile project(':react-native-amap-location')
-  	```
+`$ react-native link react-native-amap-location-api`
 
 
 ## Usage
+
 ```javascript
-import RNAmapLocation from 'react-native-amap-location';
+import AMapLocation from 'react-native-amap-location-api';
 
 // TODO: What to do with the module?
-RNAmapLocation;
+AMapLocation;
 ```
-  
+调用<a href="#init">init</a>
+
+## API
+
+### <a name="init">init(key)</a>
+
+设置高德地图的key，key自行从官网注册，与app绑定
+
+```javascript
+AMapLocation.init({
+    ios: "044a3fc11ceee93e3c539c303eff8394",
+    android: "428caa9eaeb37090d2320b48d760c142"
+});
+```
+
