@@ -20,11 +20,11 @@ import AMapLocation from 'react-native-amap-location-api';
 AMapLocation;
 ```
 
-[example]: https://github.com/M45ter/react-native-amap-location-api/tree/master/examples
+[example](https://github.com/M45ter/react-native-amap-location-api/tree/master/examples)
 
 ## API
 
-### <a name="init">init(key)</a>
+### init(key)
 
 设置高德地图的key，key自行从官网注册，与app绑定
 
