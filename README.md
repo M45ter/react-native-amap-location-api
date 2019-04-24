@@ -19,7 +19,8 @@ import AMapLocation from 'react-native-amap-location-api';
 // TODO: What to do with the module?
 AMapLocation;
 ```
-调用<a href="#init">init</a>
+
+[example]: https://github.com/M45ter/react-native-amap-location-api/tree/master/examples
 
 ## API
 
@@ -29,8 +30,52 @@ AMapLocation;
 
 ```javascript
 AMapLocation.init({
-    ios: "044a3fc11ceee93e3c539c303eff8394",
-    android: "428caa9eaeb37090d2320b48d760c142"
+    ios: "your ios key",
+    android: "your android key"
 });
 ```
 
+## setOptions(options)
+
+设置全局可配置参数
+
+```javascript
+AMapLocation.setOptions({
+    once: true,
+    needAddress: true,
+    interval: 2000
+});
+type options = {
+    once?: boolean, // 是否是单次定位
+    needAddress?: boolean, // 是否需要地址信息 
+    interval?: number //多次定位时间间隔ms
+}
+```
+
+## startLocation(options)
+
+开始定位，options不给时使用全局默认参数，有options参数时，会和全局配置参数合并，同名属性以本方法参数覆盖
+
+## stopLocation()
+
+停止定位，连续定位时，需要自行调用来停止定位，单次定位会自行停止
+
+## destroyLocation()
+
+销毁定位，可在不使用定位后调用，销毁定位的资源
+
+## addListener(listener)
+
+增加监听器，获取定位结果信息
+
+```javascript
+this.geoListener = AMapLocation.addListener(location => {
+        this.locationListener(location);
+    }
+)
+locationListener(location) {
+    // todo something
+}
+// 注意不需要监听定位结果时移除listenner，否则定位销毁前，所有注册过的listener都会收到定位结果
+this.geoListener.remove();
+```
