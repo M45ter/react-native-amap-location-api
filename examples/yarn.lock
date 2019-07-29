@@ -800,9 +800,9 @@
     "@types/yargs" "^12.0.9"
 
 "@react-native-community/cli@^1.2.1":
-  version "1.9.1"
-  resolved "http://registry.npm.taobao.org/@react-native-community/cli/download/@react-native-community/cli-1.9.1.tgz#47e261a4a8bdfdcbd9a971b90e56257bee5af1ac"
-  integrity sha1-R+JhpKi9/cvZqXG5DlYle+5a8aw=
+  version "1.11.2"
+  resolved "https://registry.npm.taobao.org/@react-native-community/cli/download/@react-native-community/cli-1.11.2.tgz#b14967f24a389f5a16889a747345cf0e5757a2f1"
+  integrity sha1-sUln8ko4n1oWiJp0c0XPDldXovE=
   dependencies:
     chalk "^1.1.1"
     commander "^2.19.0"
@@ -4891,7 +4891,7 @@ react-is@^16.8.1, react-is@^16.8.3, react-is@^16.8.4:
 
 react-native@0.59.5:
   version "0.59.5"
-  resolved "http://registry.npm.taobao.org/react-native/download/react-native-0.59.5.tgz#79500d2885a3dc83216715e1fc6effa878ad6ea9"
+  resolved "https://registry.npm.taobao.org/react-native/download/react-native-0.59.5.tgz#79500d2885a3dc83216715e1fc6effa878ad6ea9"
   integrity sha1-eVANKIWj3IMhZxXh/G7/qHitbqk=
   dependencies:
     "@babel/runtime" "^7.0.0"
