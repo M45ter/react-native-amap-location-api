@@ -10,6 +10,51 @@
 
 `$ react-native link react-native-amap-location-api`
 
+### iOS手动配置(link完毕之后)
+1.手动删除react-native-amap-location-api库link到项目目录文件Libraries下到RNAmapLocation.xcodeproj
+
+2.build setting -> search 'Header Search Path' 删除$(SRCROOT)/../node_modules/react-native-amap-location-api/ios
+
+3.cd 项目目录
+
+4.pod init（只能使用Pod安装）
+
+5.拷贝如下代码
+
+```angular2
+platform :ios, '9.0'
+
+# The target name is most likely the name of your project.
+target '你的项目名称' do
+
+# Your 'node_modules' directory is probably in the root of your project,
+# but if not, adjust the `:path` accordingly
+pod 'React', :path => '../node_modules/react-native', :subspecs => [
+'Core',
+'CxxBridge', # Include this for RN >= 0.47
+'DevSupport', # Include this to enable In-App Devmenu if RN >= 0.43
+'RCTText',
+'RCTNetwork',
+'RCTWebSocket', # Needed for debugging
+'RCTAnimation', # Needed for FlatList and animations running on native UI thread
+# Add any other subspecs you want to use in your project
+]
+# Explicitly include Yoga if you are using RN >= 0.42.0
+pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+
+# Third party deps podspec link
+pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
+pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+
+pod 'react-native-amap-location-api', path: '../node_modules/react-native-amap-location-api/ios'
+
+end
+
+# 解决问题：[!] [Xcodeproj] Generated duplicate UUIDs
+# 链接： https://github.com/CocoaPods/CocoaPods/issues/4370
+install! 'cocoapods', :deterministic_uuids => false
+```
 
 ## Usage
 
