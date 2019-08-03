@@ -1,5 +1,3 @@
-# 开发中，未发布...
-
 # react-native-amap-location-api
 
 ## Getting started
