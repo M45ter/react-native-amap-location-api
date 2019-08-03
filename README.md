@@ -1,5 +1,3 @@
-# 开发中，未发布...
-
 # react-native-amap-location-api
 
 ## Getting started
@@ -54,7 +52,8 @@ end
 # 解决问题：[!] [Xcodeproj] Generated duplicate UUIDs
 # 链接： https://github.com/CocoaPods/CocoaPods/issues/4370
 install! 'cocoapods', :deterministic_uuids => false
-```
+``` 
+6. pod install
 
 ## Usage
 

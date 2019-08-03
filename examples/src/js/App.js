@@ -36,7 +36,7 @@ export default class App extends Component {
     }
 
     start() {
-        AMapLocation.startLocation({once: false, interval: 5000});
+        AMapLocation.startLocation({once: true, interval: 5000});
     }
 
     stop() {
