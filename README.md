@@ -52,7 +52,8 @@ end
 # 解决问题：[!] [Xcodeproj] Generated duplicate UUIDs
 # 链接： https://github.com/CocoaPods/CocoaPods/issues/4370
 install! 'cocoapods', :deterministic_uuids => false
-```
+``` 
+6. pod install
 
 ## Usage
 
