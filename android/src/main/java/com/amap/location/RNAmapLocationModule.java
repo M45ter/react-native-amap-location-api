@@ -167,6 +167,9 @@ public class RNAmapLocationModule extends ReactContextBaseJavaModule {
             if (location.getAoiName() != null) {
                 resultMap.putString("aoiName", location.getAoiName());
             }
+            if (location.getDescription() != null) {
+                resultMap.putString("description", location.getDescription());
+            }
         } else {
             resultMap.putInt("code", location.getErrorCode());
             if (location.getErrorInfo() != null) {
