@@ -78,10 +78,11 @@
                                 @"errorInfo": error.localizedDescription?error.localizedDescription:@"",
                                 };
                     [self sendEventWithName:@"AMapLocationChanged" body: json];
+                } else {
+                    id json = [self json:location reGeocode:regeocode];
+                    [weakSelf sendEventWithName:@"AMapLocationChanged" body: json];
+                    [NSUserDefaults.standardUserDefaults setObject:json forKey:RNAmapLocation.storeKey];
                 }
-                id json = [self json:location reGeocode:regeocode];
-                [weakSelf sendEventWithName:@"AMapLocationChanged" body: json];
-                [NSUserDefaults.standardUserDefaults setObject:json forKey:RNAmapLocation.storeKey];
             }];
         } else {
             //如果需要持续定位返回逆地理编码信息，（自 V2.2.0版本起支持）需要做如下设置：
