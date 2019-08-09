@@ -1,6 +1,6 @@
 {
   "name": "react-native-amap-location-api",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "AMap location SDK for react native",
   "main": "index.js",
   "repository": {
